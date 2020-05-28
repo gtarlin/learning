@@ -1,0 +1,64 @@
+@import "./style.css";
+
+.mainContainer {
+    display: grid;
+    grid-template-areas:
+        "title"
+        "splash"
+        "latestPost"
+        "olderPosts"
+        "bottomNav"
+}
+
+.title {
+    grid-area: title;
+
+}
+
+.navbar {
+    grid-area: title;
+    align-items: center;
+    display: flex;
+    background-color: #555;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: #111;
+    border-bottom-width: 1px;
+}
+
+.splash {
+    grid-area: splash;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    border-bottom-style: solid;
+    border-bottom-color: #111;
+    border-bottom-width: 1px;
+    background-color: #ccc;
+    background: url("../images/bench.jpg") no-repeat center;
+}
+
+#splashText{
+	grid-column: 2/3;
+	grid-row: 2/3;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: left;
+    padding: 30px;
+    color: #fff;
+    opacity: 1.0;
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+}
+
+.latestPost {
+    grid-area: latestPost;
+}
+
+.olderPostContainer {
+    grid-area: olderPosts;
+}
+
+.bottomNav {
+    grid-area: bottomNav;
+}

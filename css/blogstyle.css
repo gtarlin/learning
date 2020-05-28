@@ -1,0 +1,32 @@
+@import "./style.css";
+
+.mainContainer {
+	display: grid;
+	grid-template-areas:
+	"title"
+	"latestPost"
+	"bottomNav"
+}
+
+.navbar {
+    grid-area: title;
+    align-items: center;
+    display: flex;
+    background-color: #555;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: #111;
+    border-bottom-width: 1px;
+}
+
+
+
+.latestPost {
+	grid-area: latestPost;
+}
+
+
+
+.bottomNav {
+	grid-area: bottomNav;
+}
