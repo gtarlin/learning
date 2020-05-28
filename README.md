@@ -1,5 +1,6 @@
-# Big Blog of Greg
+# Making it up
 
 TODO:
 
-* breakpoints to tile project cards
+* HTML first
+* CSS second
