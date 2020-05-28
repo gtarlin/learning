@@ -10,20 +10,13 @@
         "bottomNav"
 }
 
-.title {
+.mainTitle {
     grid-area: title;
 
 }
 
 .navbar {
     grid-area: title;
-    align-items: center;
-    display: flex;
-    background-color: #555;
-    padding: 10px;
-    border-bottom-style: solid;
-    border-bottom-color: #111;
-    border-bottom-width: 1px;
 }
 
 .splash {
@@ -36,18 +29,20 @@
     border-bottom-width: 1px;
     background-color: #ccc;
     background: url("../images/bench.jpg") no-repeat center;
+    background-size: cover;
 }
 
-#splashText{
-	grid-column: 2/3;
-	grid-row: 2/3;
-    font-size: 2em;
+#splashText {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.5em;
     font-weight: bold;
     text-align: left;
     padding: 30px;
     color: #fff;
     opacity: 1.0;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
 }
 
@@ -57,8 +52,60 @@
 
 .olderPostContainer {
     grid-area: olderPosts;
+    display: grid;
+}
+
+#PCB {
+    background-image: url("../images/pcb1_800w.jpg");
+    back
+}
+
+#ostrich {
+    background-image: url("../images/ostrichgraveyard_800w.jpg");
+}
+
+#windupdoll {
+    background-image: url("../images/windupddollkey_800w.jpg");
+}
+
+#neonbulb {
+    background-image: url("../images/lightbulb_800w.jpg");
+}
+
+#pumpkincookies {
+    background-image: url("../images/cookies_800w.jpg");
+}
+
+#catinthehat {
+    background-image: url("../images/catinthehat_800w.jpg");
+    background-position: top;
+}
+
+
+.itemImage {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    border: 1px solid #031927;
+
 }
 
 .bottomNav {
     grid-area: bottomNav;
+}
+
+@media (min-width: 768px) {
+
+    #splashText {
+        font-size: 2em;
+    }
+
+.itemImage {
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    border: 1px solid #031927;
+
+}
+
 }

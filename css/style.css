@@ -4,17 +4,37 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #898989;
 }
 
 
 /*  navbar styling here  */
+
+.navbar {
+    align-items: center;
+    display: flex;
+    background-color: #BA1200;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: #031927;
+    border-bottom-width: 2px;
+}
+
+.mainTitle {
+    font-family: 'Russo One', sans-serif;
+    font-size: 2em;
+    display: inline-flex;
+    color: #E3E3E3;
+    padding-right: 20px;
+    padding-left: 20px;
+}
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #555;
+    background-color: #BA1200;
     display: inline-block;
 }
 
@@ -23,17 +43,9 @@ li {
     font-weight: bold;
 }
 
-li a:hover:not(.active) {
-    background-color: #111;
-
-}
-
-/*li a:hover {}*/
-
-
 li a {
     display: inline-block;
-    color: white;
+    color: #E3E3E3;
     text-align: center;
     margin: 7px 8px;
     padding: 7px 8px;
@@ -43,21 +55,53 @@ li a {
 }
 
 .active {
-    background-color: #333;
+    background-color: #031927;
 }
 
+li a:hover:not(.active) {
+    background-color: #031927;
 
-/*  other styling here  */
+}
 
-.date {
+/* end navbar styling*/
+
+
+/*  item styling here  */
+
+.itemDate {
     font-size: small;
+	color: #031927;
 }
 
-.title {
-    font-family: 'Russo One', sans-serif;
-    font-size: 2em;
-    display: inline-flex;
-    color: #ddd;
-    padding-right: 20px;
-    padding-left: 20px;
+.itemTitle {
+	font-size: large;
+	padding: 5px 0;
+}
+.itemCategory {
+	font-size: small;
+	color: #15616D;
+}
+
+.olderPost {
+	border: 1px solid #031927;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 5px 10px;
+    background-color: #E3E3E3;
+}
+
+.follow {
+	margin-bottom: 0;
+}
+
+.follow a {
+	color: #15616D;
+	text-decoration: none;
+}
+
+.category {
+
+}
+
+img {
 }

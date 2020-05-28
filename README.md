@@ -2,7 +2,4 @@
 
 TODO:
 
-* come up with a name!
-* sketch website structure
-* HTML first
-* CSS second
+* breakpoints to tile project cards
