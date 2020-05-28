@@ -1,8 +1,6 @@
-# Big Blog of Greg
+# Making it up
 
 TODO:
 
-* come up with a name!
-* sketch website structure
 * HTML first
 * CSS second
