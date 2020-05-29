@@ -2,8 +2,8 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="css/indexstyle.css">
-	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/indexstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Making it up</title>
@@ -11,76 +11,120 @@
 
 <body>
     <div class="mainContainer">
-    	<div class="navbar">
-	        <span class="mainTitle">Making It Up</span>
-	        <ul>
-	        	<li><a href="#" class="active">Home</a></li>
-	        	<li><a href="projects.html">Projects</a></li>
-	        </ul>
-	    </div>
-        	<div class="splash">
-        		<span id="splashText">I'm Greg. I like to make things, but I've never settled on what sorts of things I like to make the most. So I dabble. And I make it all up as I go.</span>
-        	</div>
+        <div class="navbar">
+            <h1>Making It Up</h1>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+        <div class="splash">
+            <h2 id="splashText">I'm Greg. I like to make things, but I've never settled on what sorts of things I like to make the most. So I dabble. And I make it all up as I go.</h2>
+        </div>
         <div class="olderPostContainer">
-        	<div class="olderPost">
-         			<div class="itemImage" id="PCB"></div>
-        			<div class="itemTitle"> Designing a PCB</div>
-       				<span class="itemCategory">Electronics</span>
-        			<!-- <span class="itemDate">May 22, 2020</span> -->
-        			<div class="itemDescription">Here is a brief description of the entry. It contains some sort of enticement to click and follow the link. It's hard coded now but I sure hope that it'll be added programatically once I learn some more.
-        			<p class="follow"><a href="./projects.html">Read more...</a></p>
-        			</div>
-        	</div>
-        	<div class="olderPost">
-         			<div class="itemImage" id="ostrich"></div>
-         			<div class="itemCategory">Puppets/Animatronics/Electronics</div>
-        			<div class="itemTitle"> Animatronic Ostrich Graveyard</div>
-        			<!-- <div class="itemDate">May 22, 2020</div> -->
-        			<div class="itemDescription">Here is a brief description of the entry. It contains some sort of enticement to click and follow the link. It's hard coded now but I sure hope that it'll be added programatically once I learn some more.
-        			<p class="follow"><a href="./projects.html">Read more...</a></p>
-        			</div>
-        	</div>
-        	<div class="olderPost">
-        			<div class="itemImage" id="windupdoll"></div>
-        			<div class="itemCategory">Costumes/Props/Electronics</div>
-        			<div class="itemTitle">Wearable wind-up doll mechanism</div>
-        			<!-- <div class="itemDate">May 22, 2020</div> -->
-        			<div class="itemDescription">Here is a brief description of the entry. It contains some sort of enticement to click and follow the link. It's hard coded now but I sure hope that it'll be added programatically once I learn some more.
-        			<p class="follow"><a href="./projects.html">Read more...</a></p>
-        			</div>
-        	</div>
-        	<div class="olderPost">
-        			<div class="itemImage" id="pumpkincookies"></div>
-        			<div class="itemCategory">Baking/Food</div>
-        			<div class="itemTitle">Pumpkin Cookies</div>
-        			<!-- <div class="itemDate">May 22, 2020</div> -->
-        			<div class="itemDescription">Here is a brief description of the entry. It contains some sort of enticement to click and follow the link. It's hard coded now but I sure hope that it'll be added programatically once I learn some more.
-        			<p class="follow"><a href="./projects.html">Read more...</a></p>
-        			</div>
-        	</div>
-        	<div class="olderPost">
-        			<div class="itemImage" id="neonbulb"></div>
-        			<div class="itemCategory">Home/Electronics</div>
-        			<div class="itemTitle">Neon-looking bulb</div>
-        			<!-- <div class="itemDate">May 22, 2020</div> -->
-        			<div class="itemDescription">Here is a brief description of the entry. It contains some sort of enticement to click and follow the link. It's hard coded now but I sure hope that it'll be added programatically once I learn some more.
-        			<p class="follow"><a href="./projects.html">Read more...</a></p>
-        			</div>
-        	</div>
-        	<div class="olderPost">
-        			<div class="itemImage" id="catinthehat"></div>
-        			<div class="itemCategory">Costumes/Props</div>
-        			<div class="itemTitle">'Cat in the Hat' costume</div>
-        			<!-- <div class="itemDate">May 22, 2020</div> -->
-        			<div class="itemDescription">Here is a brief description of the entry. It contains some sort of enticement to click and follow the link. It's hard coded now but I sure hope that it'll be added programatically once I learn some more.
-        			<p class="follow"><a href="./projects.html">Read more...</a></p>
-        			</div>
-        	</div>
-
+            <div class="olderPost olderPostGrid">
+                <a href="./projects.html">
+                    <div class="itemImage" id="PCB"></div>
+                </a>
+                <div class="itemTitle">
+                    <h3>Designing a PCB</h3>
+                </div>
+                <h4 class="itemCategory">Electronics/Fake Categories</h4>
+                <div class="itemDescription">
+                    <p>The links all go to a single project page for now, <strong>regardless</strong> of which one is clicked on.</p>
+                </div>
+                <div class="follow">
+                    <h5><a href="./projects.html">Read more...</a></h5>
+                </div>
+            </div>
+            <div class="olderPost olderPostFlexGrid">
+                <a href="./projects.html">
+                    <div class="itemImage" id="ostrich"></div>
+                </a>
+                <div class="itemTitle">
+                    <h3>Animatronic Ostrich Graveyard</h3>
+                </div>
+                <h4 class="itemCategory">Puppets/Animatronics/Electronics/3d Printing</h4>
+                <div class="itemDescription">
+                    <p>It's hard coded now but I presume that these cards will be added <em>programatically</em> once I learn some more.</p>
+                </div>
+                <div class="follow">
+                    <h5><a href="./projects.html">Read more...</a></h5>
+                </div>
+            </div>
+            <div class="olderPost olderPostFlexGrid">
+                <a href="./projects.html">
+                    <div class="itemImage" id="windupdoll"></div>
+                </a>
+                <div class="itemTitle">
+                    <h3>Wearable wind-up doll mechanism</h3>
+                </div>
+                <h4 class="itemCategory">Costumes/Props/Electronics/3d Printing</h4>
+                <div class="itemDescription">
+                    <p>The project cards with the red borders are styled as flexgrid containers, project cards with blue borders are styled as grid containers. The "Read more..." stays at the bottom on both as they resize.</p>
+                </div>
+                <div class="follow">
+                    <h5><a href="./projects.html">Read more...</a></h5>
+                </div>
+            </div>
+            <div class="olderPost olderPostGrid">
+                <a href="./projects.html">
+                    <div class="itemImage" id="pumpkincookies"></div>
+                </a>
+                <div class="itemTitle">
+                    <h3>Pumpkin Cookies</h3>
+                </div>
+                <h4 class="itemCategory">Baking/Food</h4>
+                <div class="itemDescription">
+                    <p>The amount of text in each card must be fairly constant. If one card has tons of text it'll leave at lot of white space in other cards in the same row (above 576px)</p>
+                </div>
+                <div class="follow">
+                    <h5><a href="./projects.html">Read more...</a></h5>
+                </div>
+            </div>
+            <div class="olderPost olderPostFlexGrid">
+                <a href="./projects.html">
+                    <div class="itemImage" id="neonbulb"></div>
+                </a>
+                <div class="itemTitle">
+                    <h3>Neon-looking bulb</h3>
+                </div>
+                <h4 class="itemCategory">Home/Electronics</h4>
+                <div class="itemDescription">
+                    <p>The project cards with the red borders are styled as flexgrid containers.</p>
+                    <p>The project cards with the red borders are styled as flexgrid containers.</p>
+                </div>
+                <div class="follow">
+                    <h5><a href="./projects.html">Read more...</a></h5>
+                </div>
+            </div>
+            <div class="olderPost olderPostGrid">
+                <a href="./projects.html">
+                    <div class="itemImage" id="catinthehat"></div>
+                </a>
+                <div class="itemTitle">
+                    <h3>'Cat in the Hat' costume</h3>
+                </div>
+                <h4 class="itemCategory">Costumes/Props</h4>
+                <div class="itemDescription">
+                    <p>The cards with blue borders are grid containers.</p>
+                    <p>The cards with blue borders are grid containers.</p>
+                    <p>The cards with blue borders are grid containers.</p>
+                </div>
+                <div class="follow">
+                    <h5><a href="./projects.html">Read more...</a></h5>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <!-- <span class="mainTitle">Making It Up</span> -->
+            <!-- <h1>Making It Up</h1> -->
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
         </div>
     </div>
-
-
 </body>
 
 </html>

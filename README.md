@@ -2,5 +2,4 @@
 
 TODO:
 
-* HTML first
-* CSS second
+* media queries to tile project cards in index.html

@@ -7,6 +7,65 @@ body {
     background-color: #898989;
 }
 
+h1 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 2em;
+/*    display: inline-flex;
+*/    color: #E3E3E3;
+    padding-right: 10px;
+    padding-left: 20px;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: left;
+    padding: 30px;
+    color: #fff;
+    opacity: 1.0;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+/*used for project card titles*/
+h3 {
+    padding: 5px 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 1em;
+    color: #BA1200;
+}
+
+/*used for categories*/
+h4 {
+    font-size: 0.75em;
+    color: #15616D;
+    margin-bottom: 5px;
+}
+
+/* used for .follow (Read more...) */
+h5 {
+    color: #15616D;
+	text-decoration: none;
+    margin: 0;
+}
+
+h5 a {
+    color: #15616D;
+    text-decoration: none;
+	font-style: italic;
+
+}
+
+p {
+	margin-top: 0;
+}
+
+em {
+	font-style: italic;
+}
 
 /*  navbar styling here  */
 
@@ -20,21 +79,12 @@ body {
     border-bottom-width: 2px;
 }
 
-.mainTitle {
-    font-family: 'Russo One', sans-serif;
-    font-size: 2em;
-    display: inline-flex;
-    color: #E3E3E3;
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #BA1200;
+/*    margin: 0;
+    padding: 0;*/
+/*    overflow: hidden;*/
+/*    background-color: #BA1200;*/
     display: inline-block;
 }
 
@@ -44,9 +94,9 @@ li {
 }
 
 li a {
-    display: inline-block;
+    /*display: inline-block;*/
     color: #E3E3E3;
-    text-align: center;
+    /*text-align: center;*/
     margin: 7px 8px;
     padding: 7px 8px;
     text-decoration: none;
@@ -55,53 +105,71 @@ li a {
 }
 
 .active {
-    background-color: #031927;
+    color: #031927;
 }
 
 li a:hover:not(.active) {
-    background-color: #031927;
+    color: #031927;
 
 }
 
-/* end navbar styling*/
+/* end navbar styling */
 
 
-/*  item styling here  */
+/* project card styling here */
 
 .itemDate {
     font-size: small;
-	color: #031927;
+    color: #031927;
 }
 
 .itemTitle {
-	font-size: large;
-	padding: 5px 0;
+
 }
+
 .itemCategory {
-	font-size: small;
-	color: #15616D;
+
 }
 
 .olderPost {
-	border: 1px solid #031927;
-	border-radius: 5px;
-	padding: 10px;
-	margin: 5px 10px;
+    border: 3px solid #031927;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 10px;
     background-color: #E3E3E3;
 }
 
+.olderPostGrid {
+    display: grid;
+    align-content: start;
+    grid-template-rows: repeat(4, auto) 1fr auto;
+    border:	3px solid #5DB7DE;
+}
+
+.olderPostFlexGrid {
+    display: flex;
+    flex-direction: column;
+    border:	3px solid #BA1200;
+}
+
 .follow {
-	margin-bottom: 0;
+	grid-row-start: 6;
+	margin-top: auto;
 }
 
-.follow a {
-	color: #15616D;
-	text-decoration: none;
+/* end project card styling */
+
+/* start footer styling */
+
+.footer {
+    align-items: center;
+    background-color: #898989;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: #031927;
+    border-bottom-width: 2px;
 }
 
-.category {
-
-}
-
-img {
+.footer ul {
+    background-color: #898989;
 }
