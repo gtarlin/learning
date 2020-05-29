@@ -2,4 +2,5 @@
 
 TODO:
 
-* media queries to tile project cards in index.html
+* fix navigation
+* style project page
