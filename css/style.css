@@ -137,6 +137,11 @@ li a:hover:not(.active) {
     padding: 10px;
     margin: 5px 10px;
     background-color: #E3E3E3;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+}
+
+.olderPost:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 }
 
 .olderPostGrid {
