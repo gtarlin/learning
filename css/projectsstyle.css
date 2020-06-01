@@ -7,17 +7,13 @@
 
 .mainContainer {
     display: grid;
-    /*grid-template-columns: 1fr;*/
     grid-template-areas:
         "title"
         "splash"
         "body"
         "author"
+        "otherPosts"
         "footer"
-}
-
-img {
-    /*max-width: 330px;*/
 }
 
 nav {
@@ -60,19 +56,12 @@ nav {
 
 }
 
-#itemCategory {}
-
-/*.itemTitle {
-
-}*/
-
 .bodyContainer {
     display: grid;
     grid-auto-flow: dense;
     justify-items: center;
     grid-area: body;
     padding: 0 20px;
-    /*display: grid;*/
 }
 
 .details {
@@ -87,7 +76,6 @@ nav {
     color: #15616D;
 
 }
-
 
 .bodyImage {
 
@@ -104,26 +92,78 @@ figure {
     width: 80%;
     max-width: 330px;
     border-radius: 5px;
-
-}
-
-.imgLeft {
-    justify-self: center;
-    /*    margin-left: 10%*/
-
 }
 
 .authorContainer {
     grid-area: author;
-    border: 2px solid green;
-    /*width: 375px;*/
+    max-width: 660px;
+    justify-self: center;
+    display: grid;
+    grid-column-gap: 15px;
+    grid-template-columns: 1fr 60px auto 1fr;
+    grid-template-areas:
+        "lsb avatar name rsb"
+        "lsb avatar title rsb"
+        "lsb avatar company rsb"
+        "lsb bio bio rsb";
 
+    border: 2px solid #F18F01;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 20px 20px 20px;
+    font-family: 'Slabo 27px', serif;
+    font-weight: lighter;
+}
+
+.authorName {
+    grid-area: name;
+    font-weight: bold;
+}
+
+.authorTitle {
+    grid-area: title;
+    font-style: italic;
+}
+
+.authorCompany {
+    grid-area: company;
+}
+
+.authorBio {
+    grid-area: bio;
+}
+
+.authorAvatar {
+    grid-area: avatar;
+    align-self: center;
+}
+
+.otherPosts {
+    grid-area: otherPosts;
+    display: grid;
+    padding: 20px 0;
+    grid-template-columns: 1fr;
+    background-color: #15616D;
+}
+
+#PCB {
+    background-image: url("../images/pcb1_ls.jpg");
+}
+
+#ostrich {
+    background-image: url("../images/ostrichgraveyard_ls.jpg");
+}
+
+.itemImage {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    border: 1px solid #031927;
 }
 
 footer {
     grid-area: footer;
-    border: 2px solid purple;
-
+    background-color: #031927;
 }
 
 @media (min-width: 576px) {
@@ -131,7 +171,6 @@ footer {
     .bodyContainer {
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 10px;
-        /*grid-template-rows: ;*/
     }
 
     .details {
@@ -139,20 +178,33 @@ footer {
         justify-self: left;
     }
 
-    .bodyContainer p {}
-
-
-    figure {
-    	width: 100%;
-    	max-width: 300px;
+    .authorContainer {
+        grid-template-columns: 1fr 60px auto auto 1fr;
+        grid-template-rows: auto;
+        align-content: start;
+        grid-template-areas:
+            "lsb avatar name  bio rsb"
+            "lsb avatar title  bio rsb"
+            "lsb avatar company  bio rsb"
+            "lsb . . bio rsb";
     }
 
-    .projectImg {}
+    figure {
+        width: 100%;
+        max-width: 300px;
+    }
 
     #pumkinCookieRecipe {
         grid-row: span 3;
     }
 
+    .otherPosts {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #prevpostHeading {
+        grid-column: span 2;
+    }
 
 }
 
@@ -174,14 +226,52 @@ footer {
     .bodyContainer {
         max-width: 720px;
         justify-self: center;
-        /*grid-template-columns: fit-content(330px) 330px 1fr;*/
-        /*grid-template-rows: ;*/
     }
 
 
 }
 
 @media (min-width: 992px) {
+
+    .mainContainer {
+
+        grid-template-columns: 720px 1fr;
+        align-items: start;
+        grid-template-areas:
+            "title title"
+            "splash splash"
+            "body author"
+            "body otherPosts"
+            "footer footer";
+    }
+
+    .authorContainer {
+        grid-template-columns: 1fr 60px auto 1fr;
+        max-width: 400px;
+        grid-template-areas:
+            "lsb avatar name rsb"
+            "lsb avatar title rsb"
+            "lsb avatar company rsb"
+            "lsb bio bio rsb";
+        margin-top: 30px;
+        justify-self: left;
+    }
+
+    .otherPosts {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 20px 20px 20px;
+    	border-radius: 10px;
+    }
+
+    #prevpostHeading {
+        grid-column: span 1;
+    }
+
+    .bodyContainer {
+        max-width: 720px;
+        justify-self: left;
+    }
 
     .splashTitle {
         font-size: 2.5em;

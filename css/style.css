@@ -4,7 +4,6 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    /*background-color: #898989;*/
     background-color: #E3E3E3;
 }
 
@@ -66,6 +65,12 @@ em {
     font-style: italic;
 }
 
+hr {
+
+	width: 60%;
+	height: 2px;
+	color: gray;
+}
 
 figcaption {
 font-weight: lighter;
@@ -103,11 +108,13 @@ nav {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    background-color: #BA1200;
+    /*background-color: #BA1200;*/
+    background-color: #031927;
+
     padding: 10px;
     border-bottom-style: solid;
-    border-bottom-color: #031927;
-    border-bottom-width: 2px;
+    border-bottom-color: #F18F01;
+    border-bottom-width: 4px;
 }
 
 ul {
@@ -135,7 +142,7 @@ li a {
 }
 
 li a:hover:not(.active) {
-    color: #031927;
+    color: #F18F01;
 }
 
 /* end navbar styling */
@@ -143,42 +150,21 @@ li a:hover:not(.active) {
 
 /* project card styling here */
 
-/*.itemDate {
-
-}
-
-.itemTitle {
-
-}
-
-.itemCategory {
-
-}*/
-
 .olderPost {
-    border: 3px solid #031927;
     border-radius: 5px;
     padding: 10px;
     margin: 5px 10px;
     background-color: #E3E3E3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+
+    display: grid;
+    align-content: start;
+    grid-template-rows: repeat(4, auto) 1fr auto;
+    border: 3px solid #031927;
 }
 
 .olderPost:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
-}
-
-.olderPostGrid {
-    display: grid;
-    align-content: start;
-    grid-template-rows: repeat(4, auto) 1fr auto;
-    border: 3px solid #5DB7DE;
-}
-
-.olderPostFlexGrid {
-    display: flex;
-    flex-direction: column;
-    border: 3px solid #BA1200;
 }
 
 .follow {
@@ -192,12 +178,11 @@ li a:hover:not(.active) {
 
 footer {
     align-items: center;
-    background-color: #BA1200;
+    background-color: #031927;
     padding: 10px;
-    margin-top: 10px;
-    border-bottom-style: solid;
-    border-bottom-color: #031927;
-    border-bottom-width: 2px;
+    border-top-style: solid;
+    border-top-color: #F18F01;
+    border-top-width: 4px;
 }
 
 footer ul {

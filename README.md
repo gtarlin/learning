@@ -2,5 +2,6 @@
 
 TODO:
 
-* fix navigation
-* style project page
+* add social media
+* go over rubrik
+
