@@ -1,16 +1,24 @@
 @import "./style.css";
 
-.mainContainer {
-	display: grid;
-	/*grid-template-columns: 1fr;*/
-	grid-template-areas:
-	"title"
-	"splash"
-	"body"
-	"author"
-	"footer"
+
+* {
+    box-sizing: border-box;
 }
 
+.mainContainer {
+    display: grid;
+    /*grid-template-columns: 1fr;*/
+    grid-template-areas:
+        "title"
+        "splash"
+        "body"
+        "author"
+        "footer"
+}
+
+img {
+    max-width: 300px;
+}
 
 nav {
     grid-area: title;
@@ -18,10 +26,10 @@ nav {
 
 .splash {
     grid-area: splash;
-    display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
-    grid-template-rows: 1fr 8fr 1fr;
- 	border-bottom-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-style: solid;
     border-bottom-color: #111;
     border-bottom-width: 1px;
     background-color: #ccc;
@@ -30,87 +38,190 @@ nav {
 }
 
 .splashText {
-    grid-column: 2/3;
-    grid-row: 2/3;
     color: #fff;
     opacity: 1.0;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
+    margin: 20px 30px;
 }
 
 .splashTitle {
-	font-size: 1.5em;
+    font-size: 1.5em;
 
 }
 
 .splashSubhead {
-	padding: 0 20px 20px 30px;
-	color: #E3E3E3;
+    padding: 0 30px 20px 30px;
+    color: #E3E3E3;
 }
 
 #itemDate {
+    margin-left: 1em;
 
 }
 
-#itemCategory {
+#itemCategory {}
 
-}
 /*.itemTitle {
 
 }*/
 
+.bodyContainer {
+    display: grid;
+    grid-auto-flow: dense;
+    justify-items: center;
+    grid-area: body;
+    padding: 0 20px;
+    /*display: grid;*/
+}
+
 .details {
     font-size: small;
     color: #15616D;
-    margin-bottom: 1em;
-    margin-left: 5em;
+    margin-top: 5px;
 }
 
-.body {
-	grid-area: body;
+
+.details a {
+    text-decoration: none;
+    color: #15616D;
+
+}
+
+
+.bodyImage {
+
+    width: 100%;
+    border: 1px solid #031927;
+}
+
+figcaption {
+    border: 1px dotted gray;
+    text-align: center;
+}
+
+figure {
+    width: 80%;
+    max-width: 300px;
+
+}
+
+.imgLeft {
+    justify-self: center;
+    /*    margin-left: 10%*/
+
 }
 
 .authorContainer {
-	grid-area: author;
-	border: 2px solid green;
-	width: 375px;
+    grid-area: author;
+    border: 2px solid green;
+    /*width: 375px;*/
 
 }
 
 footer {
-	grid-area: footer;
-	border: 2px solid purple;
+    grid-area: footer;
+    border: 2px solid purple;
 
 }
 
-/*@media (min-width: 576px) {
+@media (min-width: 576px) {
 
+    .bodyContainer {
+        grid-template-columns: 1fr 1fr;
+        /*grid-template-rows: ;*/
+    }
 
+    /*        .body {
+        grid-template-columns: 1fr 350px;
+    }*/
 
-}*/
+    .details {
+        grid-column: 1 / 3;
+        justify-self: left;
+    }
 
-/*@media (min-width: 768px) {
+    .bodyContainer p {
+        grid-column: span 2;
+    }
 
+    /*    .bodyImage {
+    	grid-column-start: 2;
+    	grid-row: 2 / 4;
+    }*/
+    figure {
+        margin-top: 0;
+        margin-right: 0;
+    }
 
+    .projectImg {
+    	grid-row-start: 3;
+    	float: left;
+    }
 
-}*/
+}
+
+@media (min-width: 768px) {
+
+    .splashTitle {
+        font-size: 2em;
+    }
+
+    .splashSubhead {
+        font-size: 1.5em;
+    }
+
+    .splashText {
+        border-radius: 1em;
+        margin: 25px 30px;
+    }
+
+    /*
+    .body {
+        grid-template-columns: minmax(1fr 272px) 350px;
+    }
+
+    .details {
+    	grid-column: 1 / 3;
+    }
+
+    .bodyImage {
+    	grid-column-start: 2;
+    	grid-row: 2 / 4;
+    }*/
+
+}
 
 @media (min-width: 992px) {
 
-/*.mainContainer {
-	display: grid;
-	grid-template-columns: 640px 375px 1fr;
-	grid-template-areas:
-	"title  title title"
-	"article author ."
-	"footer footer footer"
-}*/
+    .splashTitle {
+        font-size: 2.5em;
+    }
 
+    .splashSubhead {
+        font-size: 1.5em;
+    }
+
+    .splashText {
+        border-radius: 1em;
+        margin: 30px 30px;
+    }
 
 }
 
 @media (min-width: 1200px) {
 
+    .splashTitle {
+        font-size: 3em;
+    }
 
+    .splashSubhead {
+        font-size: 2em;
+    }
+
+    .splashText {
+        border-radius: 1em;
+        margin: 35px 30px;
+    }
 
 }
