@@ -17,7 +17,7 @@
 }
 
 img {
-    max-width: 300px;
+    /*max-width: 330px;*/
 }
 
 nav {
@@ -102,7 +102,8 @@ figcaption {
 
 figure {
     width: 80%;
-    max-width: 300px;
+    max-width: 330px;
+    border-radius: 5px;
 
 }
 
@@ -129,35 +130,29 @@ footer {
 
     .bodyContainer {
         grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
         /*grid-template-rows: ;*/
     }
-
-    /*        .body {
-        grid-template-columns: 1fr 350px;
-    }*/
 
     .details {
         grid-column: 1 / 3;
         justify-self: left;
     }
 
-    .bodyContainer p {
-        grid-column: span 2;
-    }
+    .bodyContainer p {}
 
-    /*    .bodyImage {
-    	grid-column-start: 2;
-    	grid-row: 2 / 4;
-    }*/
+
     figure {
-        margin-top: 0;
-        margin-right: 0;
+    	width: 100%;
+    	max-width: 300px;
     }
 
-    .projectImg {
-    	grid-row-start: 3;
-    	float: left;
+    .projectImg {}
+
+    #pumkinCookieRecipe {
+        grid-row: span 3;
     }
+
 
 }
 
@@ -176,19 +171,13 @@ footer {
         margin: 25px 30px;
     }
 
-    /*
-    .body {
-        grid-template-columns: minmax(1fr 272px) 350px;
+    .bodyContainer {
+        max-width: 720px;
+        justify-self: center;
+        /*grid-template-columns: fit-content(330px) 330px 1fr;*/
+        /*grid-template-rows: ;*/
     }
 
-    .details {
-    	grid-column: 1 / 3;
-    }
-
-    .bodyImage {
-    	grid-column-start: 2;
-    	grid-row: 2 / 4;
-    }*/
 
 }
 
