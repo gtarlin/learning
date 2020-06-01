@@ -2,28 +2,115 @@
 
 .mainContainer {
 	display: grid;
+	/*grid-template-columns: 1fr;*/
 	grid-template-areas:
 	"title"
-	"latestPost"
-	"bottomNav"
+	"splash"
+	"body"
+	"author"
+	"footer"
 }
 
-.mainTitle {
+
+nav {
     grid-area: title;
 }
 
-.navbar {
-    grid-area: title;
+.splash {
+    grid-area: splash;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+ 	border-bottom-style: solid;
+    border-bottom-color: #111;
+    border-bottom-width: 1px;
+    background-color: #ccc;
+    background: url("../images/cookies_ls.jpg") no-repeat center;
+    background-size: cover;
 }
 
-
-
-.latestPost {
-	grid-area: latestPost;
+.splashText {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    color: #fff;
+    opacity: 1.0;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
 }
 
+.splashTitle {
+	font-size: 1.5em;
+
+}
+
+.splashSubhead {
+	padding: 0 20px 20px 30px;
+	color: #E3E3E3;
+}
+
+#itemDate {
+
+}
+
+#itemCategory {
+
+}
+/*.itemTitle {
+
+}*/
+
+.details {
+    font-size: small;
+    color: #15616D;
+    margin-bottom: 1em;
+    margin-left: 5em;
+}
+
+.body {
+	grid-area: body;
+}
+
+.authorContainer {
+	grid-area: author;
+	border: 2px solid green;
+	width: 375px;
+
+}
+
+footer {
+	grid-area: footer;
+	border: 2px solid purple;
+
+}
+
+/*@media (min-width: 576px) {
 
 
-.bottomNav {
-	grid-area: bottomNav;
+
+}*/
+
+/*@media (min-width: 768px) {
+
+
+
+}*/
+
+@media (min-width: 992px) {
+
+/*.mainContainer {
+	display: grid;
+	grid-template-columns: 640px 375px 1fr;
+	grid-template-areas:
+	"title  title title"
+	"article author ."
+	"footer footer footer"
+}*/
+
+
+}
+
+@media (min-width: 1200px) {
+
+
+
 }

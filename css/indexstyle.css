@@ -10,12 +10,7 @@
         "footer"
 }
 
-.mainTitle {
-    grid-area: title;
-
-}
-
-.navbar {
+nav {
     grid-area: title;
 }
 
@@ -35,6 +30,9 @@
 #splashText {
     grid-column: 2/3;
     grid-row: 2/3;
+    opacity: 1.0;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
 }
 
 .latestPost {
