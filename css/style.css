@@ -26,7 +26,6 @@ h2 {
     color: #fff;
 }
 
-/*used for project card titles*/
 h3 {
     padding: 5px 0;
     margin: 0;
@@ -35,14 +34,12 @@ h3 {
     color: #BA1200;
 }
 
-/*used for categories*/
 h4 {
     font-size: 0.75em;
     color: #15616D;
     margin-bottom: 0px;
 }
 
-/* used for .follow (Read more...) */
 h5 {
     color: #15616D;
     text-decoration: none;
@@ -103,7 +100,6 @@ blockquote {
 .recipe li {
     float: none;
     font-weight: normal;
-    /*font-family: 'Montserrat', sans-serif;*/
 }
 
 .recipeTitle {
@@ -118,9 +114,7 @@ nav {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    /*background-color: #BA1200;*/
     background-color: #031927;
-
     padding: 10px;
     border-bottom-style: solid;
     border-bottom-color: #F18F01;
@@ -130,7 +124,6 @@ nav {
 ul {
     list-style-type: none;
     padding-left: 10px;
-    /*display: inline-block;*/
 }
 
 li {
@@ -146,7 +139,6 @@ li a {
 }
 
 .active {
-    /*color: #031927;*/
     color: #15616D;
 
 }

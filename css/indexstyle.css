@@ -94,18 +94,6 @@ footer {
 
 }
 
-/*@media (min-width: 768px) {
-
-    #splashText {
-        font-size: 1.5em;
-    }
-
-    .olderPostContainer {
-        grid-template-columns: 1fr 1fr;
-    }
-
-}*/
-
 @media (min-width: 992px) {
 
     #splashText {

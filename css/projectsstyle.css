@@ -228,9 +228,7 @@ footer {
     .bodyContainer {
         max-width: 720px;
         justify-self: center;
-        /*align-items: start;*/
     }
-
 
 }
 
@@ -274,7 +272,6 @@ footer {
     .bodyContainer {
         max-width: 720px;
         justify-self: left;
-        /*align-items: start;*/
     }
 
     .splashTitle {
