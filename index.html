@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <link rel="stylesheet" href="css/indexstyle.css">
@@ -22,10 +22,10 @@
         <div class="splash">
             <h2 id="splashText">I'm Greg. I like to make things, but I've never settled on what sorts of things I like to make the most. So I dabble. And I make it all up as I go.</h2>
         </div>
-        <div class="olderPostContainer">
+        <div class="olderPostContainer" role="main">
             <div class="olderPost">
                 <a href="./projects.html">
-                    <div class="itemImage" id="PCB"></div>
+                    <div class="itemImage" id="PCB" alt="Designing a PCB"></div>
                 </a>
                 <div class="itemTitle">
                     <h3>Designing a PCB</h3>
@@ -40,7 +40,7 @@
             </div>
             <div class="olderPost">
                 <a href="./projects.html">
-                    <div class="itemImage" id="ostrich"></div>
+                    <div class="itemImage" id="ostrich" alt="Designing a PCB"></div>
                 </a>
                 <div class="itemTitle">
                     <h3>Animatronic Ostrich Graveyard</h3>
@@ -55,14 +55,14 @@
             </div>
             <div class="olderPost">
                 <a href="./projects.html">
-                    <div class="itemImage" id="windupdoll"></div>
+                    <div class="itemImage" id="windupdoll" alt="Designing a PCB"></div>
                 </a>
                 <div class="itemTitle">
                     <h3>Wearable wind-up doll mechanism</h3>
                 </div>
                 <h4 class="itemCategory">Costumes/Props/Electronics/3d Printing</h4>
                 <div class="itemDescription">
-                    <p>The project cards with the red borders are styled as flexgrid containers, project cards with blue borders are styled as grid containers. The "Read more..." stays at the bottom on both as they resize.</p>
+                    <p>I styled versions of these cards with both flexbox and with grid. I had them both working the way I wanted (with "read more..." at the bottom as they resize), but decided to go with grid in the end.</p>
                 </div>
                 <div class="follow">
                     <h5><a href="./projects.html">Read more...</a></h5>
@@ -70,14 +70,14 @@
             </div>
             <div class="olderPost">
                 <a href="./projects.html">
-                    <div class="itemImage" id="pumpkincookies"></div>
+                    <div class="itemImage" id="pumpkincookies" alt="Designing a PCB"></div>
                 </a>
                 <div class="itemTitle">
                     <h3>Pumpkin Cookies</h3>
                 </div>
                 <h4 class="itemCategory">Baking/Food</h4>
                 <div class="itemDescription">
-                    <p>The amount of text in each card must be fairly constant. If one card has tons of text it'll leave at lot of white space in other cards in the same row (above 576px)</p>
+                    <p>The amount of text in each card must be somewhat constant. If one card has tons of text it'll leave at lot of white space in other cards in the same row (above 576px)</p>
                 </div>
                 <div class="follow">
                     <h5><a href="./projects.html">Read more...</a></h5>
@@ -85,14 +85,14 @@
             </div>
             <div class="olderPost">
                 <a href="./projects.html">
-                    <div class="itemImage" id="neonbulb"></div>
+                    <div class="itemImage" id="neonbulb" alt="Designing a PCB"></div>
                 </a>
                 <div class="itemTitle">
                     <h3>Neon-looking bulb</h3>
                 </div>
                 <h4 class="itemCategory">Home/Electronics</h4>
                 <div class="itemDescription">
-                    <p>I wouldn't actually use the two types of card layout on one website, of course. I'm just showing that I've fiddled with them and got them each to work. I'm more comfortable with grid and would probably stick with that.</p>
+                    <p>There should be other pages which have cards for categories of posts, but I'll add that after I am able to programatically add posts.</p>
                 </div>
                 <div class="follow">
                     <h5><a href="./projects.html">Read more...</a></h5>
@@ -100,16 +100,14 @@
             </div>
             <div class="olderPost">
                 <a href="./projects.html">
-                    <div class="itemImage" id="catinthehat"></div>
+                    <div class="itemImage" id="catinthehat" alt="Designing a PCB"></div>
                 </a>
                 <div class="itemTitle">
                     <h3>'Cat in the Hat' costume</h3>
                 </div>
                 <h4 class="itemCategory">Costumes/Props</h4>
                 <div class="itemDescription">
-                    <p>The cards with blue borders are grid containers.</p>
-                    <p>The cards with blue borders are grid containers.</p>
-                    <p>The cards with blue borders are grid containers.</p>
+                    <p>The axe accesability plugin doesn't like that the divs which contain the background images for each card are links with no discernable text. Hmmm.</p>
                 </div>
                 <div class="follow">
                     <h5><a href="./projects.html">Read more...</a></h5>
@@ -117,12 +115,18 @@
             </div>
         </div>
         <footer>
-            <!-- <span class="mainTitle">Making It Up</span> -->
-            <!-- <h1>Making It Up</h1> -->
             <ul>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
             </ul>
+            <section class="socialMedia">
+            	<a href="#"><img src="./images/facebook.png" alt=
+            		"facebook" width="20px"></a>
+            	<a href="#"><img src="./images/linkedin.png" alt=
+            		"linked itemDescription" width="20px"></a>
+            	<a href="#"><img src="./images/twitter.svg" alt=
+            		"twitter" width="20px"></a>
+            </section>
         </footer>
     </div>
 </body>
