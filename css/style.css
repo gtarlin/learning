@@ -62,6 +62,10 @@ em {
     font-style: italic;
 }
 
+u {
+    color: #BA1200;
+}
+
 hr {
 
     width: 60%;
