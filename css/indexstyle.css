@@ -1,20 +1,21 @@
 @import "./style.css";
+/*@import "./cardstyle.css";
+@import "./footer.css";
+@import "./header.css";
+@import "./recipestyle.css";
+@import "./authorstyle.css";
+@import "./splashstyle.css";*/
 
 .mainContainer {
     display: grid;
     grid-template-areas:
         "title"
         "splash"
-        "latestPost"
-        "olderPosts"
+        "Posts"
         "footer"
 }
 
-nav {
-    grid-area: title;
-}
-
-.splash {
+/*.splash {
     grid-area: splash;
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
@@ -33,17 +34,7 @@ nav {
     opacity: 1.0;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
-}
-
-.latestPost {
-    grid-area: latestPost;
-}
-
-.olderPostContainer {
-    grid-area: olderPosts;
-    display: grid;
-    margin-bottom: 10px;
-}
+}*/
 
 #PCB {
     background-image: url("../images/pcb1_ls.jpg");
@@ -71,36 +62,50 @@ nav {
 }
 
 
-.itemImage {
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    border: 1px solid #031927;
-}
-
-footer {
-    grid-area: footer;
-}
-
 @media (min-width: 576px) {
 
     #splashText {
         font-size: 1.5em;
     }
 
-    .olderPostContainer {
+    .PostContainer {
         grid-template-columns: 1fr 1fr;
     }
 
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 
-    #splashText {
+    .splashTitle {
         font-size: 2em;
     }
 
-    .olderPostContainer {
+    .splashSubhead {
+        font-size: 1.5em;
+    }
+
+    .splashText {
+        border-radius: 1em;
+        margin: 25px 30px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .splashTitle {
+        font-size: 2.5em;
+    }
+
+    .splashSubhead {
+        font-size: 1.5em;
+    }
+
+    .splashText {
+        border-radius: 1em;
+        margin: 30px 30px;
+    }
+
+    .PostContainer {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -108,7 +113,20 @@ footer {
 
 @media (min-width: 1200px) {
 
-    .olderPostContainer {
+    .splashTitle {
+        font-size: 3em;
+    }
+
+    .splashSubhead {
+        font-size: 2em;
+    }
+
+    .splashText {
+        border-radius: 1em;
+        margin: 35px 30px;
+    }
+
+    .PostContainer {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 

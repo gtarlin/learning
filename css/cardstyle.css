@@ -1,0 +1,33 @@
+.PostContainer {
+    grid-area: Posts;
+    display: grid;
+    margin-bottom: 10px;
+}
+
+.Post {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 10px;
+    background-color: #E3E3E3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    display: grid;
+    align-content: start;
+    grid-template-rows: repeat(4, auto) 1fr auto;
+    border: 3px solid #031927;
+}
+
+.Post:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.follow {
+    grid-row-start: 6;
+    margin-top: auto;
+}
+
+.itemImage {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    border: 1px solid #031927;
+}

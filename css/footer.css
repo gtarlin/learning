@@ -1,0 +1,14 @@
+.footer {
+    border-top-style: solid;
+    border-top-color: #F18F01;
+    border-top-width: 4px;
+    min-height: 100px;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.socialMedia {
+    margin-right: 20px;
+}

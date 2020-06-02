@@ -1,0 +1,19 @@
+.recipe {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 10px;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.recipe li {
+    float: none;
+    font-weight: normal;
+}
+
+.recipeTitle {
+    font-size: large;
+}

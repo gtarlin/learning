@@ -1,0 +1,30 @@
+.splash {
+    grid-area: splash;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-color: #111;
+    border-bottom-width: 1px;
+    background-color: #ccc;
+    background: url("../images/cookies_ls.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.splashText {
+    color: #fff;
+    opacity: 1.0;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin: 20px 30px;
+}
+
+.splashTitle {
+    font-size: 1.5em;
+    padding-bottom: 0;
+}
+
+.splashSubhead {
+    padding: 20px 30px;
+    color: #E3E3E3;
+}

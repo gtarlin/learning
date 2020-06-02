@@ -1,9 +1,10 @@
 @import "./style.css";
-
-
-* {
-    box-sizing: border-box;
-}
+/*@import "./cardstyle.css";
+@import "./footer.css";
+@import "./header.css";
+@import "./recipestyle.css";
+@import "./authorstyle.css";
+@import "./splashstyle.css";*/
 
 .mainContainer {
     display: grid;
@@ -16,44 +17,12 @@
         "footer"
 }
 
-nav {
-    grid-area: title;
-}
-
 .splash {
-    grid-area: splash;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom-style: solid;
-    border-bottom-color: #111;
-    border-bottom-width: 1px;
-    background-color: #ccc;
     background: url("../images/cookies_ls.jpg") no-repeat center;
-    background-size: cover;
-}
-
-.splashText {
-    color: #fff;
-    opacity: 1.0;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    margin: 20px 30px;
-}
-
-.splashTitle {
-    font-size: 1.5em;
-
-}
-
-.splashSubhead {
-    padding: 0 30px 20px 30px;
-    color: #E3E3E3;
 }
 
 #itemDate {
     margin-left: 1em;
-
 }
 
 .bodyContainer {
@@ -63,7 +32,6 @@ nav {
     grid-area: body;
     padding: 0 20px;
     align-items: start;
-
 }
 
 .details {
@@ -76,68 +44,11 @@ nav {
 .details a {
     text-decoration: none;
     color: #15616D;
-
 }
 
 .bodyImage {
-
     width: 100%;
     border: 1px solid #031927;
-}
-
-figcaption {
-    border: 1px dotted gray;
-    text-align: center;
-}
-
-figure {
-    width: 80%;
-    max-width: 330px;
-    border-radius: 5px;
-}
-
-.authorContainer {
-    grid-area: author;
-    max-width: 660px;
-    justify-self: center;
-    display: grid;
-    grid-column-gap: 15px;
-    grid-template-columns: 1fr 60px auto 1fr;
-    grid-template-areas:
-        "lsb avatar name rsb"
-        "lsb avatar title rsb"
-        "lsb avatar company rsb"
-        "lsb bio bio rsb";
-
-    border: 2px solid #F18F01;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px 20px 20px 20px;
-    font-family: 'Slabo 27px', serif;
-    font-weight: lighter;
-}
-
-.authorName {
-    grid-area: name;
-    font-weight: bold;
-}
-
-.authorTitle {
-    grid-area: title;
-    font-style: italic;
-}
-
-.authorCompany {
-    grid-area: company;
-}
-
-.authorBio {
-    grid-area: bio;
-}
-
-.authorAvatar {
-    grid-area: avatar;
-    align-self: center;
 }
 
 .otherPosts {
@@ -161,11 +72,6 @@ figure {
     background-position: center;
     height: 200px;
     border: 1px solid #031927;
-}
-
-footer {
-    grid-area: footer;
-    background-color: #031927;
 }
 
 @media (min-width: 576px) {

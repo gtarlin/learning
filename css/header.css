@@ -1,0 +1,40 @@
+.header {
+    grid-area: title;
+    border-bottom-style: solid;
+    border-bottom-color: #F18F01;
+    border-bottom-width: 4px;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #031927;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+nav li {
+    float: left;
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+nav li a {
+    color: #E3E3E3;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+nav .active {
+    color: #15616D;
+}
+
+nav li a:hover:not(.active) {
+    color: #F18F01;
+}
+

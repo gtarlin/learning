@@ -1,0 +1,43 @@
+.authorContainer {
+    grid-area: author;
+    max-width: 660px;
+    justify-self: center;
+    display: grid;
+    grid-column-gap: 15px;
+    grid-template-columns: 1fr 60px auto 1fr;
+    grid-template-areas:
+        "lsb avatar name rsb"
+        "lsb avatar title rsb"
+        "lsb avatar company rsb"
+        "lsb bio bio rsb";
+
+    border: 2px solid #F18F01;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 20px 20px 20px;
+    font-family: 'Slabo 27px', serif;
+    font-weight: lighter;
+}
+
+.authorName {
+    grid-area: name;
+    font-weight: bold;
+}
+
+.authorTitle {
+    grid-area: title;
+    font-style: italic;
+}
+
+.authorCompany {
+    grid-area: company;
+}
+
+.authorBio {
+    grid-area: bio;
+}
+
+.authorAvatar {
+    grid-area: avatar;
+    align-self: center;
+}
