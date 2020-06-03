@@ -1,11 +1,3 @@
-@import "./style.css";
-/*@import "./cardstyle.css";
-@import "./footer.css";
-@import "./header.css";
-@import "./recipestyle.css";
-@import "./authorstyle.css";
-@import "./splashstyle.css";*/
-
 .mainContainer {
     display: grid;
     grid-template-areas:
@@ -14,27 +6,6 @@
         "Posts"
         "footer"
 }
-
-/*.splash {
-    grid-area: splash;
-    display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
-    grid-template-rows: 1fr 8fr 1fr;
-    border-bottom-style: solid;
-    border-bottom-color: #111;
-    border-bottom-width: 1px;
-    background-color: #ccc;
-    background: url("../images/bench.jpg") no-repeat center;
-    background-size: cover;
-}
-
-#splashText {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    opacity: 1.0;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-}*/
 
 #PCB {
     background-image: url("../images/pcb1_ls.jpg");
